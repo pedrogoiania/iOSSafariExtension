@@ -12,8 +12,16 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		4B9DEF0F7B530B30517AD8B2 /* libPods-BrowserExtension-ActionExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9BCA26BF1CDF82691FEDD9 /* libPods-BrowserExtension-ActionExtension.a */; };
 		7699B88040F8A987B510C191 /* libPods-BrowserExtension-BrowserExtensionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-BrowserExtension-BrowserExtensionTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A5A739742B75B49700D365C9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A739732B75B49700D365C9 /* Media.xcassets */; };
+		A5A739772B75B49700D365C9 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A739762B75B49700D365C9 /* ActionViewController.m */; };
+		A5A7397A2B75B49700D365C9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A739782B75B49700D365C9 /* MainInterface.storyboard */; };
+		A5A7397E2B75B49700D365C9 /* ActionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A5A7396F2B75B49700D365C9 /* ActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5A7B94A2B75ECB30017D007 /* ActionExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A7B9492B75ECB30017D007 /* ActionExtension.m */; };
+		A5A7B94B2B75ECB30017D007 /* ActionExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A7B9492B75ECB30017D007 /* ActionExtension.m */; };
+		A5A7B94C2B75ED0B0017D007 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A739762B75B49700D365C9 /* ActionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = BrowserExtension;
 		};
+		A5A7397C2B75B49700D365C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5A7396E2B75B49700D365C9;
+			remoteInfo = ActionExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5A7397F2B75B49700D365C9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5A7397E2B75B49700D365C9 /* ActionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* BrowserExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowserExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,9 +70,31 @@
 		5709B34CF0A7D63546082F79 /* Pods-BrowserExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension.release.xcconfig"; path = "Target Support Files/Pods-BrowserExtension/Pods-BrowserExtension.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-BrowserExtension-BrowserExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension-BrowserExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-BrowserExtension-BrowserExtensionTests/Pods-BrowserExtension-BrowserExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-BrowserExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrowserExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		606CBC9796C8EFA1F66767E8 /* Pods-ActionExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionExtension.debug.xcconfig"; path = "Target Support Files/Pods-ActionExtension/Pods-ActionExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BrowserExtension/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		851270D5EAC89EAC51E98DD5 /* Pods-ActionExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionExtension.release.xcconfig"; path = "Target Support Files/Pods-ActionExtension/Pods-ActionExtension.release.xcconfig"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-BrowserExtension-BrowserExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension-BrowserExtensionTests.release.xcconfig"; path = "Target Support Files/Pods-BrowserExtension-BrowserExtensionTests/Pods-BrowserExtension-BrowserExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F9BCA26BF1CDF82691FEDD9 /* libPods-BrowserExtension-ActionExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrowserExtension-ActionExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A7396F2B75B49700D365C9 /* ActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A739702B75B49700D365C9 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		A5A739732B75B49700D365C9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A5A739752B75B49700D365C9 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		A5A739762B75B49700D365C9 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		A5A739792B75B49700D365C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A5A7397B2B75B49700D365C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A739852B75B99D00D365C9 /* libReact-RCTAppDelegate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTAppDelegate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A739872B75DDC600D365C9 /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A739892B75DDDA00D365C9 /* libReact-RCTText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A7398B2B75DDE600D365C9 /* libReact-RCTText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A7398D2B75DFAD00D365C9 /* libRCT-Folly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libRCT-Folly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A7398F2B75DFB300D365C9 /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A739912B75DFBD00D365C9 /* libReact-debug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-debug.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A739932B75E01000D365C9 /* libReact-RCTNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A7B9482B75EC410017D007 /* ActionExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionExtension.h; sourceTree = "<group>"; };
+		A5A7B9492B75ECB30017D007 /* ActionExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionExtension.m; sourceTree = "<group>"; };
+		CA4FA2AD12083C5D4FE5DAE5 /* Pods-BrowserExtension-ActionExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension-ActionExtension.debug.xcconfig"; path = "Target Support Files/Pods-BrowserExtension-ActionExtension/Pods-BrowserExtension-ActionExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F7E2AE513D634CED998D4E7A /* Pods-BrowserExtension-ActionExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension-ActionExtension.release.xcconfig"; path = "Target Support Files/Pods-BrowserExtension-ActionExtension/Pods-BrowserExtension-ActionExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +111,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-BrowserExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A7396C2B75B49700D365C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9DEF0F7B530B30517AD8B2 /* libPods-BrowserExtension-ActionExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +151,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				A5A7B9482B75EC410017D007 /* ActionExtension.h */,
+				A5A7B9492B75ECB30017D007 /* ActionExtension.m */,
 			);
 			name = BrowserExtension;
 			sourceTree = "<group>";
@@ -99,9 +160,19 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5A739932B75E01000D365C9 /* libReact-RCTNetwork.a */,
+				A5A739912B75DFBD00D365C9 /* libReact-debug.a */,
+				A5A7398F2B75DFB300D365C9 /* libReact-Core.a */,
+				A5A7398D2B75DFAD00D365C9 /* libRCT-Folly.a */,
+				A5A7398B2B75DDE600D365C9 /* libReact-RCTText.a */,
+				A5A739892B75DDDA00D365C9 /* libReact-RCTText.a */,
+				A5A739872B75DDC600D365C9 /* libReact-Core.a */,
+				A5A739852B75B99D00D365C9 /* libReact-RCTAppDelegate.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-BrowserExtension.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-BrowserExtension-BrowserExtensionTests.a */,
+				A5A739702B75B49700D365C9 /* UniformTypeIdentifiers.framework */,
+				9F9BCA26BF1CDF82691FEDD9 /* libPods-BrowserExtension-ActionExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +190,7 @@
 				13B07FAE1A68108700A75B9A /* BrowserExtension */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* BrowserExtensionTests */,
+				A5A739722B75B49700D365C9 /* ActionExtension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -133,8 +205,21 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* BrowserExtension.app */,
 				00E356EE1AD99517003FC87E /* BrowserExtensionTests.xctest */,
+				A5A7396F2B75B49700D365C9 /* ActionExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A5A739722B75B49700D365C9 /* ActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A5A739732B75B49700D365C9 /* Media.xcassets */,
+				A5A739752B75B49700D365C9 /* ActionViewController.h */,
+				A5A739762B75B49700D365C9 /* ActionViewController.m */,
+				A5A739782B75B49700D365C9 /* MainInterface.storyboard */,
+				A5A7397B2B75B49700D365C9 /* Info.plist */,
+			);
+			path = ActionExtension;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -144,6 +229,10 @@
 				5709B34CF0A7D63546082F79 /* Pods-BrowserExtension.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-BrowserExtension-BrowserExtensionTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-BrowserExtension-BrowserExtensionTests.release.xcconfig */,
+				606CBC9796C8EFA1F66767E8 /* Pods-ActionExtension.debug.xcconfig */,
+				851270D5EAC89EAC51E98DD5 /* Pods-ActionExtension.release.xcconfig */,
+				CA4FA2AD12083C5D4FE5DAE5 /* Pods-BrowserExtension-ActionExtension.debug.xcconfig */,
+				F7E2AE513D634CED998D4E7A /* Pods-BrowserExtension-ActionExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -183,15 +272,36 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				A5A7397F2B75B49700D365C9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A5A7397D2B75B49700D365C9 /* PBXTargetDependency */,
 			);
 			name = BrowserExtension;
 			productName = BrowserExtension;
 			productReference = 13B07F961A680F5B00A75B9A /* BrowserExtension.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A5A7396E2B75B49700D365C9 /* ActionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A739822B75B49700D365C9 /* Build configuration list for PBXNativeTarget "ActionExtension" */;
+			buildPhases = (
+				2638E96ECAE2F5EA5F0D4657 /* [CP] Check Pods Manifest.lock */,
+				A5A7396B2B75B49700D365C9 /* Sources */,
+				A5A7396C2B75B49700D365C9 /* Frameworks */,
+				A5A7396D2B75B49700D365C9 /* Resources */,
+				20735625BE11B5D708D2CF96 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionExtension;
+			productName = ActionExtension;
+			productReference = A5A7396F2B75B49700D365C9 /* ActionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -207,6 +317,9 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					A5A7396E2B75B49700D365C9 = {
+						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
@@ -225,6 +338,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* BrowserExtension */,
 				00E356ED1AD99517003FC87E /* BrowserExtensionTests */,
+				A5A7396E2B75B49700D365C9 /* ActionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +357,15 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A7396D2B75B49700D365C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A739742B75B49700D365C9 /* Media.xcassets in Resources */,
+				A5A7397A2B75B49700D365C9 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +403,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrowserExtension/Pods-BrowserExtension-frameworks.sh\"\n";
+		};
+		20735625BE11B5D708D2CF96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrowserExtension-ActionExtension/Pods-BrowserExtension-ActionExtension-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrowserExtension-ActionExtension/Pods-BrowserExtension-ActionExtension-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrowserExtension-ActionExtension/Pods-BrowserExtension-ActionExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2638E96ECAE2F5EA5F0D4657 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrowserExtension-ActionExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -392,8 +553,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A7B94C2B75ED0B0017D007 /* ActionViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				A5A7B94A2B75ECB30017D007 /* ActionExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A7396B2B75B49700D365C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A739772B75B49700D365C9 /* ActionViewController.m in Sources */,
+				A5A7B94B2B75ECB30017D007 /* ActionExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +577,23 @@
 			target = 13B07F861A680F5B00A75B9A /* BrowserExtension */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
+		A5A7397D2B75B49700D365C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5A7396E2B75B49700D365C9 /* ActionExtension */;
+			targetProxy = A5A7397C2B75B49700D365C9 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5A739782B75B49700D365C9 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A739792B75B49700D365C9 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
@@ -418,7 +606,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = BrowserExtensionTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,7 +630,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = BrowserExtensionTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,8 +654,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S873WHF2TZ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BrowserExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,7 +683,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S873WHF2TZ;
 				INFOPLIST_FILE = BrowserExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -580,10 +772,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -651,14 +840,101 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5A739802B75B49700D365C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA4FA2AD12083C5D4FE5DAE5 /* Pods-BrowserExtension-ActionExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S873WHF2TZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"APP_EXTENSION_TARGET=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ActionExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BrowserExtension.ActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5A739812B75B49700D365C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E2AE513D634CED998D4E7A /* Pods-BrowserExtension-ActionExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S873WHF2TZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"APP_EXTENSION_TARGET=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ActionExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BrowserExtension.ActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -688,6 +964,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5A739822B75B49700D365C9 /* Build configuration list for PBXNativeTarget "ActionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A739802B75B49700D365C9 /* Debug */,
+				A5A739812B75B49700D365C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
