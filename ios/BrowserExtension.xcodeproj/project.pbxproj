@@ -12,6 +12,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		439656C0BB2FBFAE8C98144A /* libPods-BrowserExtension-CustomExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C75142760D5EAA993D38240B /* libPods-BrowserExtension-CustomExtension.a */; };
 		4B9DEF0F7B530B30517AD8B2 /* libPods-BrowserExtension-ActionExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9BCA26BF1CDF82691FEDD9 /* libPods-BrowserExtension-ActionExtension.a */; };
 		7699B88040F8A987B510C191 /* libPods-BrowserExtension-BrowserExtensionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-BrowserExtension-BrowserExtensionTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -22,6 +23,19 @@
 		A5A7B94A2B75ECB30017D007 /* ActionExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A7B9492B75ECB30017D007 /* ActionExtension.m */; };
 		A5A7B94B2B75ECB30017D007 /* ActionExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A7B9492B75ECB30017D007 /* ActionExtension.m */; };
 		A5A7B94C2B75ED0B0017D007 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A739762B75B49700D365C9 /* ActionViewController.m */; };
+		A5A7B9642B75F14F0017D007 /* ContentScript.js in Resources */ = {isa = PBXBuildFile; fileRef = A5A7B9632B75F14F0017D007 /* ContentScript.js */; };
+		A5A7B9662B75F2CB0017D007 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A7B9652B75F2CB0017D007 /* SafariServices.framework */; };
+		A5A7B9672B75F3220017D007 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A7B9652B75F2CB0017D007 /* SafariServices.framework */; };
+		A5A7B9702B7604EE0017D007 /* SafariWebExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A7B96F2B7604EE0017D007 /* SafariWebExtensionHandler.m */; };
+		A5A7B9732B7604EE0017D007 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = A5A7B9722B7604EE0017D007 /* _locales */; };
+		A5A7B9752B7604EE0017D007 /* images in Resources */ = {isa = PBXBuildFile; fileRef = A5A7B9742B7604EE0017D007 /* images */; };
+		A5A7B9772B7604EE0017D007 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A7B9762B7604EE0017D007 /* manifest.json */; };
+		A5A7B9792B7604EE0017D007 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = A5A7B9782B7604EE0017D007 /* background.js */; };
+		A5A7B97B2B7604EE0017D007 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = A5A7B97A2B7604EE0017D007 /* content.js */; };
+		A5A7B97D2B7604EE0017D007 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = A5A7B97C2B7604EE0017D007 /* popup.html */; };
+		A5A7B97F2B7604EE0017D007 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = A5A7B97E2B7604EE0017D007 /* popup.css */; };
+		A5A7B9812B7604EE0017D007 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = A5A7B9802B7604EE0017D007 /* popup.js */; };
+		A5A7B9852B7604EE0017D007 /* CustomExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A5A7B96C2B7604ED0017D007 /* CustomExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +53,13 @@
 			remoteGlobalIDString = A5A7396E2B75B49700D365C9;
 			remoteInfo = ActionExtension;
 		};
+		A5A7B9832B7604EE0017D007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5A7B96B2B7604ED0017D007;
+			remoteInfo = CustomExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +70,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				A5A7397E2B75B49700D365C9 /* ActionExtension.appex in Embed Foundation Extensions */,
+				A5A7B9852B7604EE0017D007 /* CustomExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,9 +93,11 @@
 		5B7EB9410499542E8C5724F5 /* Pods-BrowserExtension-BrowserExtensionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension-BrowserExtensionTests.debug.xcconfig"; path = "Target Support Files/Pods-BrowserExtension-BrowserExtensionTests/Pods-BrowserExtension-BrowserExtensionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-BrowserExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrowserExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		606CBC9796C8EFA1F66767E8 /* Pods-ActionExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionExtension.debug.xcconfig"; path = "Target Support Files/Pods-ActionExtension/Pods-ActionExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		6AAA308A88C403A06F93C299 /* Pods-BrowserExtension-CustomExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension-CustomExtension.release.xcconfig"; path = "Target Support Files/Pods-BrowserExtension-CustomExtension/Pods-BrowserExtension-CustomExtension.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BrowserExtension/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		851270D5EAC89EAC51E98DD5 /* Pods-ActionExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionExtension.release.xcconfig"; path = "Target Support Files/Pods-ActionExtension/Pods-ActionExtension.release.xcconfig"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-BrowserExtension-BrowserExtensionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension-BrowserExtensionTests.release.xcconfig"; path = "Target Support Files/Pods-BrowserExtension-BrowserExtensionTests/Pods-BrowserExtension-BrowserExtensionTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A1C9C4F4AB8EE664B4A05B6 /* Pods-BrowserExtension-CustomExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension-CustomExtension.debug.xcconfig"; path = "Target Support Files/Pods-BrowserExtension-CustomExtension/Pods-BrowserExtension-CustomExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		9F9BCA26BF1CDF82691FEDD9 /* libPods-BrowserExtension-ActionExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrowserExtension-ActionExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A7396F2B75B49700D365C9 /* ActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A739702B75B49700D365C9 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
@@ -92,6 +116,21 @@
 		A5A739932B75E01000D365C9 /* libReact-RCTNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A7B9482B75EC410017D007 /* ActionExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionExtension.h; sourceTree = "<group>"; };
 		A5A7B9492B75ECB30017D007 /* ActionExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionExtension.m; sourceTree = "<group>"; };
+		A5A7B9632B75F14F0017D007 /* ContentScript.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = ContentScript.js; sourceTree = "<group>"; };
+		A5A7B9652B75F2CB0017D007 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		A5A7B96C2B7604ED0017D007 /* CustomExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A7B96E2B7604EE0017D007 /* SafariWebExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariWebExtensionHandler.h; sourceTree = "<group>"; };
+		A5A7B96F2B7604EE0017D007 /* SafariWebExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariWebExtensionHandler.m; sourceTree = "<group>"; };
+		A5A7B9722B7604EE0017D007 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		A5A7B9742B7604EE0017D007 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		A5A7B9762B7604EE0017D007 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		A5A7B9782B7604EE0017D007 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		A5A7B97A2B7604EE0017D007 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		A5A7B97C2B7604EE0017D007 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		A5A7B97E2B7604EE0017D007 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		A5A7B9802B7604EE0017D007 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		A5A7B9822B7604EE0017D007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75142760D5EAA993D38240B /* libPods-BrowserExtension-CustomExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrowserExtension-CustomExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4FA2AD12083C5D4FE5DAE5 /* Pods-BrowserExtension-ActionExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension-ActionExtension.debug.xcconfig"; path = "Target Support Files/Pods-BrowserExtension-ActionExtension/Pods-BrowserExtension-ActionExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F7E2AE513D634CED998D4E7A /* Pods-BrowserExtension-ActionExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrowserExtension-ActionExtension.release.xcconfig"; path = "Target Support Files/Pods-BrowserExtension-ActionExtension/Pods-BrowserExtension-ActionExtension.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A7B9672B75F3220017D007 /* SafariServices.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-BrowserExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +158,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A7B9662B75F2CB0017D007 /* SafariServices.framework in Frameworks */,
 				4B9DEF0F7B530B30517AD8B2 /* libPods-BrowserExtension-ActionExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A7B9692B7604ED0017D007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439656C0BB2FBFAE8C98144A /* libPods-BrowserExtension-CustomExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +209,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5A7B9652B75F2CB0017D007 /* SafariServices.framework */,
 				A5A739932B75E01000D365C9 /* libReact-RCTNetwork.a */,
 				A5A739912B75DFBD00D365C9 /* libReact-debug.a */,
 				A5A7398F2B75DFB300D365C9 /* libReact-Core.a */,
@@ -173,6 +223,7 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-BrowserExtension-BrowserExtensionTests.a */,
 				A5A739702B75B49700D365C9 /* UniformTypeIdentifiers.framework */,
 				9F9BCA26BF1CDF82691FEDD9 /* libPods-BrowserExtension-ActionExtension.a */,
+				C75142760D5EAA993D38240B /* libPods-BrowserExtension-CustomExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,6 +242,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* BrowserExtensionTests */,
 				A5A739722B75B49700D365C9 /* ActionExtension */,
+				A5A7B96D2B7604EE0017D007 /* CustomExtension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -206,6 +258,7 @@
 				13B07F961A680F5B00A75B9A /* BrowserExtension.app */,
 				00E356EE1AD99517003FC87E /* BrowserExtensionTests.xctest */,
 				A5A7396F2B75B49700D365C9 /* ActionExtension.appex */,
+				A5A7B96C2B7604ED0017D007 /* CustomExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,8 +271,35 @@
 				A5A739762B75B49700D365C9 /* ActionViewController.m */,
 				A5A739782B75B49700D365C9 /* MainInterface.storyboard */,
 				A5A7397B2B75B49700D365C9 /* Info.plist */,
+				A5A7B9632B75F14F0017D007 /* ContentScript.js */,
 			);
 			path = ActionExtension;
+			sourceTree = "<group>";
+		};
+		A5A7B96D2B7604EE0017D007 /* CustomExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A5A7B96E2B7604EE0017D007 /* SafariWebExtensionHandler.h */,
+				A5A7B96F2B7604EE0017D007 /* SafariWebExtensionHandler.m */,
+				A5A7B9822B7604EE0017D007 /* Info.plist */,
+				A5A7B9712B7604EE0017D007 /* Resources */,
+			);
+			path = CustomExtension;
+			sourceTree = "<group>";
+		};
+		A5A7B9712B7604EE0017D007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5A7B9722B7604EE0017D007 /* _locales */,
+				A5A7B9742B7604EE0017D007 /* images */,
+				A5A7B9762B7604EE0017D007 /* manifest.json */,
+				A5A7B9782B7604EE0017D007 /* background.js */,
+				A5A7B97A2B7604EE0017D007 /* content.js */,
+				A5A7B97C2B7604EE0017D007 /* popup.html */,
+				A5A7B97E2B7604EE0017D007 /* popup.css */,
+				A5A7B9802B7604EE0017D007 /* popup.js */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -233,6 +313,8 @@
 				851270D5EAC89EAC51E98DD5 /* Pods-ActionExtension.release.xcconfig */,
 				CA4FA2AD12083C5D4FE5DAE5 /* Pods-BrowserExtension-ActionExtension.debug.xcconfig */,
 				F7E2AE513D634CED998D4E7A /* Pods-BrowserExtension-ActionExtension.release.xcconfig */,
+				9A1C9C4F4AB8EE664B4A05B6 /* Pods-BrowserExtension-CustomExtension.debug.xcconfig */,
+				6AAA308A88C403A06F93C299 /* Pods-BrowserExtension-CustomExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -278,6 +360,7 @@
 			);
 			dependencies = (
 				A5A7397D2B75B49700D365C9 /* PBXTargetDependency */,
+				A5A7B9842B7604EE0017D007 /* PBXTargetDependency */,
 			);
 			name = BrowserExtension;
 			productName = BrowserExtension;
@@ -303,6 +386,25 @@
 			productReference = A5A7396F2B75B49700D365C9 /* ActionExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		A5A7B96B2B7604ED0017D007 /* CustomExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A7B9882B7604EE0017D007 /* Build configuration list for PBXNativeTarget "CustomExtension" */;
+			buildPhases = (
+				A9680AA46E29A0899FC0F81F /* [CP] Check Pods Manifest.lock */,
+				A5A7B9682B7604ED0017D007 /* Sources */,
+				A5A7B9692B7604ED0017D007 /* Frameworks */,
+				A5A7B96A2B7604ED0017D007 /* Resources */,
+				B646E154657883C15A82BB3E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomExtension;
+			productName = CustomExtension;
+			productReference = A5A7B96C2B7604ED0017D007 /* CustomExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -319,6 +421,9 @@
 						LastSwiftMigration = 1120;
 					};
 					A5A7396E2B75B49700D365C9 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					A5A7B96B2B7604ED0017D007 = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
@@ -339,6 +444,7 @@
 				13B07F861A680F5B00A75B9A /* BrowserExtension */,
 				00E356ED1AD99517003FC87E /* BrowserExtensionTests */,
 				A5A7396E2B75B49700D365C9 /* ActionExtension */,
+				A5A7B96B2B7604ED0017D007 /* CustomExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -366,6 +472,22 @@
 			files = (
 				A5A739742B75B49700D365C9 /* Media.xcassets in Resources */,
 				A5A7397A2B75B49700D365C9 /* MainInterface.storyboard in Resources */,
+				A5A7B9642B75F14F0017D007 /* ContentScript.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A7B96A2B7604ED0017D007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A7B9792B7604EE0017D007 /* background.js in Resources */,
+				A5A7B97F2B7604EE0017D007 /* popup.css in Resources */,
+				A5A7B97D2B7604EE0017D007 /* popup.html in Resources */,
+				A5A7B9752B7604EE0017D007 /* images in Resources */,
+				A5A7B9772B7604EE0017D007 /* manifest.json in Resources */,
+				A5A7B9732B7604EE0017D007 /* _locales in Resources */,
+				A5A7B97B2B7604EE0017D007 /* content.js in Resources */,
+				A5A7B9812B7604EE0017D007 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +585,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9680AA46E29A0899FC0F81F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrowserExtension-CustomExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B646E154657883C15A82BB3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrowserExtension-CustomExtension/Pods-BrowserExtension-CustomExtension-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrowserExtension-CustomExtension/Pods-BrowserExtension-CustomExtension-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrowserExtension-CustomExtension/Pods-BrowserExtension-CustomExtension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
@@ -569,6 +730,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5A7B9682B7604ED0017D007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A7B9702B7604EE0017D007 /* SafariWebExtensionHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -581,6 +750,11 @@
 			isa = PBXTargetDependency;
 			target = A5A7396E2B75B49700D365C9 /* ActionExtension */;
 			targetProxy = A5A7397C2B75B49700D365C9 /* PBXContainerItemProxy */;
+		};
+		A5A7B9842B7604EE0017D007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5A7B96B2B7604ED0017D007 /* CustomExtension */;
+			targetProxy = A5A7B9832B7604EE0017D007 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -657,7 +831,7 @@
 				DEVELOPMENT_TEAM = S873WHF2TZ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BrowserExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -685,7 +859,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S873WHF2TZ;
 				INFOPLIST_FILE = BrowserExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -874,7 +1048,7 @@
 				INFOPLIST_FILE = ActionExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ActionExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -920,7 +1094,7 @@
 				INFOPLIST_FILE = ActionExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ActionExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -931,6 +1105,92 @@
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BrowserExtension.ActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5A7B9862B7604EE0017D007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A1C9C4F4AB8EE664B4A05B6 /* Pods-BrowserExtension-CustomExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S873WHF2TZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BrowserExtension.CustomExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5A7B9872B7604EE0017D007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AAA308A88C403A06F93C299 /* Pods-BrowserExtension-CustomExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S873WHF2TZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BrowserExtension.CustomExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -973,6 +1233,15 @@
 			buildConfigurations = (
 				A5A739802B75B49700D365C9 /* Debug */,
 				A5A739812B75B49700D365C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5A7B9882B7604EE0017D007 /* Build configuration list for PBXNativeTarget "CustomExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A7B9862B7604EE0017D007 /* Debug */,
+				A5A7B9872B7604EE0017D007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

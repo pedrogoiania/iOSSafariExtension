@@ -9,6 +9,8 @@
 @interface ActionViewController : UIViewController
 
 - (void) done;
+- (void) increaseFontSizeInPage;
+- (void) decreaseFontSizeInPage;
 
 extern ActionViewController * actionViewController;
 
