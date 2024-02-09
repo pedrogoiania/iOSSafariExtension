@@ -946,7 +946,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -1014,7 +1017,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -1146,6 +1152,7 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BrowserExtension.CustomExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1189,6 +1196,7 @@
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.BrowserExtension.CustomExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
