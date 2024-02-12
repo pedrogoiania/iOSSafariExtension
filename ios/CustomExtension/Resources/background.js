@@ -18,11 +18,29 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     });
   }
 
-  if (request.greeting === 'highlight') {
+  if (request.greeting === 'decrease') {
     browser.tabs.query({active: true, currentWindow: true}, function (tabs) {
       // Send a message to the content script in the active tab
       browser.tabs
-        .sendMessage(tabs[0].id, {command: request.greeting})
+        .sendMessage(tabs[0].id, {command: 'decrease'})
+        .then(response => {
+          console.log(response.result);
+        })
+        .catch(err => console.error(err));
+    });
+  }
+
+  if (request.greeting === 'highlight') {
+    browser.tabs.query({active: true, currentWindow: true}, function (tabs) {
+      // Send a message to the content script in the active tab
+
+      console.log('request: ', request);
+
+      browser.tabs
+        .sendMessage(tabs[0].id, {
+          command: request.greeting,
+          params: {wordsToHighlight: request.wordsToHighlight},
+        })
         .then(response => {
           console.log(response.result);
         })

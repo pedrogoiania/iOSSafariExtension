@@ -1,16 +1,23 @@
 /* eslint-disable no-undef */
-document.body.style.backgroundColor = 'yellow'; // Example: Change background color
 
 // Listen for messages from the extension (e.g., popup or background script)
 browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.command == 'increase') {
+  if (message.command === 'increase') {
     document.body.style.zoom =
       (parseFloat(document.body.style.zoom) || 1) * 1.1;
     sendResponse({result: 'Size increased'});
   }
 
-  if (message.command == 'highlight') {
-    const words = ['create', 'account', 'select', 'charity'];
+  if (message.command === 'decrease') {
+    document.body.style.zoom =
+      (parseFloat(document.body.style.zoom) || 1) / 1.1;
+    sendResponse({result: 'Size increased'});
+  }
+
+  if (message.command === 'highlight') {
+    console.log('message: ', message);
+
+    const words = message.params.wordsToHighlight;
     const spanElements = document.querySelectorAll('span');
     spanElements.forEach(span => {
       let spanHtml = span.innerHTML;
@@ -25,7 +32,7 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
     });
   }
 
-  if (message.command == 'invert') {
+  if (message.command === 'invert') {
     const body = document.body;
     const currentFilter = body.style.filter;
 

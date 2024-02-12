@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="popup.css">
     <script type="module" src="popup.js"></script>
 </head>
+
 <body>
-    <strong>Hello World!</strong>
-    
-    <button id="increaseButton" >Increase Button</button>
-    
-    <button id="highlight" >Highlight Words</button>
+    <div class="extension-popover">
+        <div class="content">
+            <div class="section">
+                <h3>Text Size</h3>
+                <button class="text-size" id="decrease">-</button>
 
-    <button id="invert" >Invert Colors</button>
-
+                <button class="text-size" id="increase">+</button>
+            </div>
+            <div class="section">
+                <h3>Background Color</h3>
+                <button class="color-mode" id="light-mode">Light</button>
+                <button class="color-mode" id="dark-mode">Dark</button>
+            </div>
+            <div class="section">
+                <h3>Highlight Keywords</h3>
+                <input id="keywordInput" type="text" id="keywords" placeholder="Enter keywords separeted by comma">
+                <br />
+                <button id="highlight">Highlight</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

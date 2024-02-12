@@ -18,10 +18,15 @@ import {
   useColorScheme,
   View,
   NativeModules,
+  Button,
+  Image,
 } from 'react-native';
+
+const gif = require('./giphy.gif');
 
 const styles = new StyleSheet.create({
   container: {
+    backgroundColor: 'black',
     justifyContent: 'center',
     alignItems: 'center',
     flex: 1,
@@ -35,6 +40,16 @@ const styles = new StyleSheet.create({
   },
   buttonText: {
     color: 'white',
+  },
+  text: {
+    color: 'white',
+    fontSize: 20,
+    marginBottom: 20,
+  },
+  link: {
+    textDecorationStyle: 'solid',
+    textDecorationColor: 'white',
+    textDecorationLine: 'underline',
   },
 });
 
@@ -59,38 +74,26 @@ function App(props) {
   if (props.browserExtension) {
     return (
       <SafeAreaView style={styles.container}>
-        <Text>The browser extension works fine</Text>
+        <Text style={styles.text}>
+          The browser extension using React Native
+        </Text>
 
-        <Pressable style={styles.button} onPress={handleDone}>
-          <Text style={styles.buttonText}>Done</Text>
-        </Pressable>
-
-        <Pressable style={styles.button} onPress={handleIncrease}>
-          <Text style={styles.buttonText}>Increase Font Size</Text>
-        </Pressable>
-        <Pressable style={styles.button} onPress={handleDecrease}>
-          <Text style={styles.buttonText}>Decrease Font Size</Text>
-        </Pressable>
+        <Text style={styles.text}>Here it's work in progress. Welcome</Text>
       </SafeAreaView>
     );
   }
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Browser Extension App</Text>
+      <Text style={styles.text}>Browser Extension App</Text>
       <Pressable
         onPress={() => {
           Linking.openURL('https://givefreely.com/');
         }}>
-        <Text>Click here to try</Text>
+        <Text style={[styles.text, styles.link]}>Click here to try</Text>
       </Pressable>
 
-      <Pressable style={styles.button} onPress={handleIncrease}>
-        <Text style={styles.buttonText}>Increase Font Size</Text>
-      </Pressable>
-      <Pressable style={styles.button} onPress={handleDecrease}>
-        <Text style={styles.buttonText}>Decrease Font Size</Text>
-      </Pressable>
+      <Image source={gif} />
     </SafeAreaView>
   );
 }
