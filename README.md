@@ -1,5 +1,10 @@
 ## Getting started 
 
+<!-- ![Example](giphy.gif) -->
+
+<img src="giphy.gif" alt="Country Search App GIF example" width="250"/>
+
+
 ## Before start 
 
 Make sure that you have iOS and React Native environment configured. 
